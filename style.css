@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: black;
+  border-radius: 50px;
+  color: white;
+  height: 710px;
+  width: 425px;
+  padding: 10px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.display {
+  height: 240px;
+  width: 100%;
+  text-align: right;
+  padding: 1rem;
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.previous-display {
+  opacity: 0.5;
+  font-size: 25px;
+  overflow: hidden;
+}
+
+.numbers {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 50px;
+  height: 80px;
+  width: 80px;
+  transition: filter 0.3s;
+}
+
+.button.function {
+  color: black;
+  background: #a5a5a5;
+}
+
+.button.operator {
+  background: #f1a33c;
+}
+
+.button.number-0 {
+  border-radius: 55px;
+  grid-column: 1 / span 2;
+  justify-content: flex-start;
+  padding-left: 43px;
+  width: 215px;
+}
+
+.button:hover {
+  opacity: 0.3;
+}
