@@ -31,6 +31,10 @@ keys.addEventListener("click", (e) => {
       handleOperator(value);
       break;
 
+    case "±":
+      eksi();
+      break;
+
     case ".":
       inputDecimal();
       break;
@@ -106,6 +110,14 @@ function calculate(first, second, operator) {
   return second;
 }
 
+function eksi() {
+  if (firstValue == displayValue) {
+    displayValue = displayValue * -1;
+    firstValue = displayValue;
+  } else {
+    displayValue = displayValue * -1;
+  }
+}
 //!   clock    section   ///////
 
 // DOM Elements
