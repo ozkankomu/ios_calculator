@@ -1,8 +1,8 @@
 //!  calculator      //
 
 const currentDisplay = document.querySelector(".current-display");
+const previousDisplay = document.querySelector(".previous-display");
 const keys = document.querySelector(".numbers");
-let previousDisplay = "0";
 let displayValue = "0";
 let firstValue = null;
 let operator = null;
@@ -69,6 +69,8 @@ function inputDecimal() {
 
 function clear() {
   displayValue = "0";
+  firstValue = "0";
+  previousDisplay.innerText = "0";
 }
 
 function handleOperator(nextOperator) {
@@ -104,7 +106,7 @@ function calculate(first, second, operator) {
   return second;
 }
 
-//!  saat    section   ///////
+//!   clock    section   ///////
 
 // DOM Elements
 let hourEl = document.querySelector(".hour");
