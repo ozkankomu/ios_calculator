@@ -11,6 +11,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url(https://www.ziraatbank.com.tr/PublishingImages/Landing/hesaplamaAraclari/Mevduat_Getirisi_Hesaplama.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
 }
 
 .container {
@@ -23,6 +27,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 20px 20px 10px rgb(80, 79, 79);
 }
 .top-container {
   display: flex;
