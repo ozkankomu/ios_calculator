@@ -24,8 +24,8 @@ keys.addEventListener("click", (e) => {
   switch (value) {
     case "+":
     case "-":
-    case "*":
-    case "/":
+    case "x":
+    case "÷":
     case "=":
     case "%":
       handleOperator(value);
@@ -98,11 +98,11 @@ function handleOperator(nextOperator) {
 function calculate(first, second, operator) {
   if (operator === "+") {
     return first + second;
-  } else if (operator === "*") {
+  } else if (operator === "x") {
     return first * second;
   } else if (operator === "-") {
     return first - second;
-  } else if (operator === "/") {
+  } else if (operator === "÷") {
     return first / second;
   } else if (operator === "%") {
     return (first * second) / 100;
