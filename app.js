@@ -88,7 +88,7 @@ function handleOperator(nextOperator) {
     firstValue = value;
   } else if (operator) {
     const result = calculate(firstValue, value, operator);
-    displayValue = `${parseFloat(result.toFixed(10))}`;
+    displayValue = `${parseFloat(result.toFixed(5))}`;
     firstValue = result;
   }
   waitingForSecondValue = true;
