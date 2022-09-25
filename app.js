@@ -57,6 +57,7 @@ keys.addEventListener("click", (e) => {
 
 function inputNumber(num) {
   if (waitingForSecondValue) {
+    console.log(waitingForSecondValue);
     previousDisplay.innerText = displayValue;
     displayValue = num;
     waitingForSecondValue = false;
@@ -73,7 +74,7 @@ function inputDecimal() {
 
 function clear() {
   displayValue = "0";
-  firstValue = "0";
+  firstValue = null;
   previousDisplay.innerText = "0";
 }
 
