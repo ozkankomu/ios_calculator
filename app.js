@@ -83,11 +83,13 @@ function handleOperator(nextOperator) {
 
   if (operator && waitingForSecondValue) {
     operator = nextOperator;
+    console.log(operator);
     return;
   }
   if (firstValue === null) {
     firstValue = value;
   } else if (operator) {
+    console.log(operator);
     const result = calculate(firstValue, value, operator);
     displayValue = `${parseFloat(result.toFixed(5))}`;
     firstValue = result;
